@@ -93,5 +93,3 @@ app.delete("/alunos/:id", async (req, res) => {
     res.status(500).json({ erro: "Erro ao deletar aluno" });
   }
 });
-
-pausa para ver que erro ta dando com o professor
