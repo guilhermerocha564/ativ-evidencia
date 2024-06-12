@@ -1,18 +1,11 @@
-CREATE TABLE backhp (
-    ID SERIAL PRIMARY KEY,
-    nome VARCHAR(100) NOT NULL,
-    idade INT NOT NULL,
-    casa VARCHAR(100) NOT NULL,
-    habilidade VARCHAR(100) NOT NULL,
-    sangue VARCHAR(100) NOT NULL,
-    patrono VARCHAR(100)
-);
+CREATE DATABASE escolaevidencia;
 
-CREATE TABLE varinhahp (
-    ID SERIAL PRIMARY KEY,
-    material VARCHAR(100) NOT NULL,
-    comprimento VARCHAR(100) NOT NULL,
-    nucleo VARCHAR(100) NOT NULL,
-    datafabri INT NOT NULL
+CREATE TABLE alunos(
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    idade  INT,
+    turma VARCHAR(10),
+    email VARCHAR(255) NOT NULL,
+    cpf INT NOT NULL
 );
 
